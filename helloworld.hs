@@ -3,7 +3,7 @@
 {-# Language TemplateHaskell   #-}
 {-# Language TypeFamilies      #-}
 
-
+-- Fix from Yesod to Yesod.Core --> no more Yesod direct library maybe?
 import Yesod.Core
 data HelloWorld = HelloWorld
 
