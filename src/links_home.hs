@@ -3,17 +3,11 @@
 {-# Language TemplateHaskell   #-}
 {-# Language TypeFamilies      #-}
 
+module Home2 where
+
 import Yesod.Core
 import Page1
-import Page2
-import Home2
 
-data Links = Links
+instance Yesod Links
 
-mkYesod "Links" [parseRoutes|
-/ Home2R GET
-/page1 Page1R GET
-/page2 Page2R GET
-|]
-
-main = warp 3000 Links
+getHome2R defaultLayout [whamlet|<a href=@{Page1R}>P1|]

@@ -3,7 +3,8 @@
 {-# Language TemplateHaskell   #-}
 {-# Language TypeFamilies      #-}
 
-module Page2R where
+module Page2 where
 
 import Yesod.Core
-getPage2R = defaultLayout [whamlet|<a href=@{HomeR}>HOME|]
+import Home2
+getPage2R = defaultLayout [whamlet|<a href=@{Home2R}>HOME|]
