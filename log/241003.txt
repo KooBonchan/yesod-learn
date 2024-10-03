@@ -1,0 +1,18 @@
+solving links.hs from yesod book - chapter basic
+1. Pages should have its own page, not on a same file in links.hs
+2. I'd better just stack build and setup package.yaml
+   1. Tried: stack runghc, importing package: not working
+   2. Tried: stack runghc, -i to import module: deprecated?
+   3. delete all and just modify package.yaml --> working
+3. Cycling import error!
+   1. home -> p1 -> p2 -> home
+   2. new Routing file should be imported for each page
+   3. while dividing a single page code to multi-page code, I totally missed the structure.
+4. Haskell namespacing
+   1. Haskell prevents name conflicts by module namespacing.
+5. Variable not in scope: getHomeR, each page!!!1
+   1. Oh, I got lost...
+   2. i put every page into a single LinksRoutes file, it works.
+   3. Why????
+   4. Yesod.core did not work, Yesod worked for multi-page.
+   5. Page distinguishing -- TODO.

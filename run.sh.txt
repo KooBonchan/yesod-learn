@@ -1,0 +1,6 @@
+# for build
+stack build
+
+# for exec
+stack exec -- yesod-book
+# yesod-book for project name

@@ -3,7 +3,7 @@ version: "0.0.0"
 
 dependencies:
 - base
-- yesod-core
+- yesod
 
 # The library contains all of our application code. The executable
 # defined below is just a thin wrapper.
@@ -13,7 +13,7 @@ library:
 # Runnable executable for our application
 executables:
   yesod-book:
-    main: Main.hs
+    main: Link.hs
     source-dirs: app
     ghc-options:
     - -threaded

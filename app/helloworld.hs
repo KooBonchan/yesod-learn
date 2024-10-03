@@ -4,7 +4,12 @@
 {-# Language TypeFamilies      #-}
 
 -- Fix from Yesod to Yesod.Core --> no more Yesod direct library maybe?
-import Yesod.Core
+-- import Yesod.Core
+-- Package.yaml only imported Yesod-Core not Yesod
+-- which occurred stack not able to compile
+import Yesod
+
+
 data HelloWorld = HelloWorld
 
 mkYesod "HelloWorld" [parseRoutes|
