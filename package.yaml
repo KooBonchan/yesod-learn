@@ -13,7 +13,7 @@ library:
 # Runnable executable for our application
 executables:
   yesod-book:
-    main: Link.hs
+    main: WidgetApp.hs
     source-dirs: app
     ghc-options:
     - -threaded

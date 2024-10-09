@@ -7,6 +7,7 @@
 -- import Yesod.Core
 -- Package.yaml only imported Yesod-Core not Yesod
 -- which occurred stack not able to compile
+module HelloWorld where
 import Yesod
 
 

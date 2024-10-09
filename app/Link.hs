@@ -3,6 +3,8 @@
 {-# Language TemplateHaskell   #-}
 {-# Language TypeFamilies      #-}
 
+module Link where
+
 import Yesod
 
 import LinksRoutes

@@ -1,0 +1,32 @@
+1. defaultlayout seems not working without instance or data
+    when dividing page, i should consider howto.
+2. File name does not match module name:
+    Saw     : ‘Main’
+    Expected: ‘Link
+    
+    why? maybe not exporting module while not main file?
+    then, after doing learn, i should separating each project
+    leaving only 1 main
+3. Why haskell good?
+    If error occurs in compile, real error
+    If not, i can forget about runtime error
+
+Widget -- dynamic build of front files
+    hamlet : html, lucius/casius : css, julius : js
+    May use external frontend files, that would be more efficient
+    Whem making widget in do chain, (monoid? monad chain)
+        css injected to the head, following the convention
+        js injected to the end of body, as convention
+    monad -- so DOS-like
+    widget = WidgetT MyApp IO ()
+        WidgetT --> monad, for monad chain to combine all
+
+DefaultLayout : Widget -> Handler Html
+    getHomeR : GET For HOME -- handler html
+    defaultlayout $ do --> do monad be widget!
+    overridden for each app <- instance yesod is important?
+    widget -> pagecontent url -> html
+
+Widget : Basic block of page --> external front file, import as widget
+    do monad chain -- multi widget combining
+    unwrap -- future job, when needed, back to here.
