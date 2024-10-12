@@ -1,0 +1,21 @@
+Post Redirect Get pattern
+    to prevent user from re-sending post message. (if user refreshed the page in form-complete page)
+
+Capital case -- 10 times
+not save -- 4 times
+    before build, just turn on the language server 1 time!
+    build takes quite long time
+    that would be time saver
+
+try column select when pattern matching
+    ctrl alt shift + arrow
+
+setmessage at gethomer call -- message from a session
+getmessage at defaultlayout renderer -- retrive message
+ --> when refresh, get message refreshed?
+TODO!
+
+errorhandler -- notFound :: NotFound provided
+
+From now on, type specification everytime
+ -- unexpected type ambiguous error occurred

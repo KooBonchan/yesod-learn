@@ -4,6 +4,7 @@ version: "0.0.0"
 dependencies:
 - base
 - yesod
+- time
 
 # The library contains all of our application code. The executable
 # defined below is just a thin wrapper.
@@ -13,7 +14,7 @@ library:
 # Runnable executable for our application
 executables:
   yesod-book:
-    main: WidgetApp.hs
+    main: ErrorHandler.hs
     source-dirs: app
     ghc-options:
     - -threaded

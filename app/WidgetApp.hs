@@ -3,6 +3,7 @@
 {-# LANGUAGE TemplateHaskell   #-}
 {-# LANGUAGE TypeFamilies      #-}
 
+module WidgetApp where
 import Yesod
 
 data WidgetApp = WidgetApp
