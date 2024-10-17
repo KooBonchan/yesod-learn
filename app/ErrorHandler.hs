@@ -2,7 +2,7 @@
 {-# LANGUAGE QuasiQuotes        #-}
 {-# LANGUAGE TemplateHaskell    #-}
 {-# LANGUAGE TypeFamilies       #-}
-
+module ErrorHandler where
 import Yesod
 
 data ErrorHandler = ErrorHandler
