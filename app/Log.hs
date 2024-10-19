@@ -20,7 +20,7 @@ instance Yesod App where
 
 getHomeR = do
     $logDebug "Trying to read data file"
-    edata <- liftIO $ try $ readFile "datafile.txt"
+    edata <- liftIO $ try $ readFile "data/datafile.txt"
     case edata :: Either IOException String of
         Left e -> do
             $logError "Could not read datafile.txt"
@@ -29,11 +29,17 @@ getHomeR = do
             $logInfo "Reading datafile success"
             let ls = lines str
             when (length ls < 5) $ $logWarn "less than 5 lines"
-            defaultLayout
+            defaultLayout $ do
                 [whamlet|
                     <ul>
                         $forall l <- ls
                             <li>#{l}
+                |]
+                toWidget [cassius|
+                    ul, li
+                        list-style: none
+                    li
+                        font-size:40px
                 |]
 
 main :: IO ()

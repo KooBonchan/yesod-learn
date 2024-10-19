@@ -5,7 +5,6 @@ dependencies:
 - base
 - yesod
 - time
-- control
 
 # The library contains all of our application code. The executable
 # defined below is just a thin wrapper.

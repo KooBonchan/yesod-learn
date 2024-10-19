@@ -1,0 +1,11 @@
+1. this week - suffered trying to import control
+    -- basic haskell package, no change to package.yaml needed.
+2. package path -- from root folder, not source app folder
+    -- clean way to track path
+
+first time using custom cassius
+    since most of them be static: external file import is recommended
+    cassius over js-like css control looks good
+    using toWidget [somehowParseCSS|style.css|]?
+
+logging success, i'd better link it to log file.
