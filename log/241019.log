@@ -9,3 +9,8 @@ first time using custom cassius
     using toWidget [somehowParseCSS|style.css|]?
 
 logging success, i'd better link it to log file.
+
+shouldLogIO to log on a server bash
+    -- to file - using maybe pipelining with >?
+$logDebug be loved
+$logInfo much time
